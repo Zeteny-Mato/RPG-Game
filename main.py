@@ -32,6 +32,15 @@ while running:
         player_rect.move_ip(0, -player_speed)
     if keys[pygame.K_DOWN]:
         player_rect.move_ip(0, player_speed)
+    
+    if keys[pygame.K_a]:
+        player_rect.move_ip(-player_speed, 0)
+    if keys[pygame.K_d]:
+        player_rect.move_ip(player_speed, 0)
+    if keys[pygame.K_w]:
+        player_rect.move_ip(0, -player_speed)
+    if keys[pygame.K_s]:
+        player_rect.move_ip(0, player_speed)
 
     screen.fill((255, 255, 255))
 
